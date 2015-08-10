@@ -4,7 +4,7 @@ require('triangle')
 describe(Triangle) do
   describe("#triangle?") do
     it("determines if it is a triangle by calculating if the sum of two sides is less than or equal to the third side") do
-      test_triangle = Triangle.new(5, 8, 5)
+      test_triangle = Triangle.new(2, 2, 8)
       expect(test_triangle.triangle?()).to(eq(true))
     end
   end

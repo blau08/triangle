@@ -6,9 +6,9 @@ class Triangle
   end
 
   define_method(:triangle?) do
-    if (@length)+(@width) >= @height &&
-    (@height)+(@width) >= @length &&
-    (@height)+(@length) >= @width
+    if (@length+@width) >= @height &&
+    (@height+@width) >= @length &&
+    (@height+@length) >= @width
       true
     else
       false

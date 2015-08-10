@@ -8,9 +8,10 @@ get('/') do
 end
 
 get('/triangle') do
-  length = params.fetch('length')
-  width = params.fetch('width')
-  height = params.fetch('height')
+  length = params.fetch('length').to_i
+  width = params.fetch('width').to_i
+  height = params.fetch('height').to_i
   @triangle = Triangle.new(length, width, height)
+
   erb(:triangle)
 end
